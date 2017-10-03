@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>DisplayDbDetails</display-name>
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>DisplayServlet</display-name>
+    <servlet-name>DisplayServlet</servlet-name>
+    <servlet-class>com.aitek.display.DisplayServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplayServlet</servlet-name>
+    <url-pattern>/display</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CsvGenerator</display-name>
+    <servlet-name>CsvGenerator</servlet-name>
+    <servlet-class>com.aitek.display.CsvGenerator</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CsvGenerator</servlet-name>
+    <url-pattern>/csv</url-pattern>
+  </servlet-mapping>
+</web-app>
